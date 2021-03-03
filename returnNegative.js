@@ -6,10 +6,24 @@
 // The number can be negative already, in which case no change is required.
 // Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 
+// my solution
 
-
-function reverseString(str){
-  return str.split("").reverse().join("");
+function makeNegative(num) {
+  if (num <= 0) {
+    return num;
+  } else {
+    return -num;
+  }
 }
 
-console.log(reverseString("will this work even if I use spaces and 3984729"));
+// others on codewars
+
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+
+function makeNegative(num) {
+  return num < 0 ? num : -num;
+}
+
+makeNegative = n => -Math.abs(n)
