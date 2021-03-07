@@ -10,10 +10,15 @@
 
 // my solution
 
-class SmallestIntegerFinder {
-  findSmallestInt(args) {
-    
+ function findSmallestInt(args) {
+    let smallestBoy = args[0]
+    for (let i=0; i<args.length; i++)
+      if(args[i] <= smallestBoy) {
+        smallestBoy = args[i]
+      }
+      return smallestBoy
   }
-}
+
+  console.log(findSmallestInt([12, 23958, 29,4, 2, 123]))
 
 // others on codewars
