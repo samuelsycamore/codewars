@@ -22,3 +22,9 @@
   console.log(findSmallestInt([12, 23958, 29,4, 2, 123]))
 
 // others on codewars
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
