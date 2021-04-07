@@ -4,15 +4,11 @@
 
 // my solution
 
-function repeatStr (string, times) {
-  if (times > 0) {    
-    return string.repeat(times);
-  } else {
-      return "";
-  }
+function repeatStr (n, s) {
+  return s.repeat(n);
 }
 
-console.log(repeatStr("sup", 6))
+console.log(repeatStr("sup", 4))
 
 
 
