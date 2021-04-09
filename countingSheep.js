@@ -25,6 +25,7 @@ function countSheeps(arrayOfSheep) {
   }
   return count;
 }
+
 var array1 = [true,  true,  true,  false,
   true,  true,  true,  true ,
   true,  false, true,  false,
@@ -35,3 +36,8 @@ var array1 = [true,  true,  true,  false,
 console.log(countSheeps(array1))
 
 // others on codewars
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+
+let countSheeps = x => x.filter( s => s ).length;
